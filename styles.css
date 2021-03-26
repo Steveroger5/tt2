@@ -1,0 +1,324 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    background-color: #f9f3f3;
+}
+
+#Header{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.2rem;
+    grid-area: header;
+    margin: 2%;
+    padding:2%;
+    background-color: #010a43;
+    color: #fff;
+}
+
+#Footer{
+    font-weight: 800;
+    bottom: 0;
+    text-align: center;
+    grid-area: footer;
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 0.1fr 2fr 0.1fr;
+    grid-template-areas: 
+    "side header"
+    "side days"
+    "side footer"
+    ;
+}
+
+#side{
+    grid-area: side;
+    background-color: #010a43;
+    color: #fff;
+    margin: 2%;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+#days{
+    grid-area: days;
+    background-color: #eeebdd;
+    margin: 2%;
+    
+}
+
+
+.con2{
+    margin-top: 50%;
+    text-align: center;
+    display: grid;
+    height: 70vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: 
+    "my1"
+    "my2"
+    "my3"
+    "my4"
+    "my5"
+    "my6"
+    ;
+}
+#my1{
+    grid-area: my1;
+    padding: 10%;
+}
+#my1:hover{
+    color: black;
+    background-color: #fff;
+    
+}
+#my2{
+    grid-area: my2;
+    padding: 10%;
+}
+#my2:hover{
+    color: black;
+    background-color: #fff;
+    
+}
+#my3{
+    grid-area: my3;
+    padding: 10%;
+}
+#my3:hover{
+    color: black;
+    background-color: #fff;
+    
+}
+#my4{
+    grid-area: my4;
+    padding: 10%;
+}
+#my4:hover{
+    color: black;
+    background-color: #fff;
+    
+}
+#my5{
+    grid-area: my5;
+    padding: 10%;
+}
+#my5:hover{
+    color: black;
+    background-color: #fff;
+   
+}
+#my6{
+    grid-area: my6;
+    padding: 10%;
+}
+#my6:hover{
+    color: black;
+    background-color: #fff;
+    
+}
+
+#period{
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "time sub link"
+    ;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffc2c2;
+}
+
+#time{
+    grid-area: time;
+}
+#sub{
+    grid-area: sub;
+}
+#link{
+    grid-area: link;
+}
+
+#side a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #period{
+        border: 2px solid black;
+        line-height: 1.6;
+        text-align: center;
+        padding: 2%;
+        margin: 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "time"
+        "sub"
+        "link"
+        ;
+        font-weight: 600;
+        font-size: 1rem;
+        color: black;
+        background-color: #ffc2c2;
+    }
+  }
+
+  h2{
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    #side{
+        grid-area: side;
+        background-color: #010a43;
+        color: #fff;
+        margin: 2%;
+        font-weight: 800;
+        font-size: 0.8rem;
+    }
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-template-areas: 
+        "side header"
+        "side days"
+        "side footer"
+        ;
+    }
+
+    #period{
+        border: 2px solid black;
+        line-height: 1.6;
+        text-align: center;
+        padding: 2%;
+        margin: 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "time"
+        "sub"
+        "link"
+        ;
+        font-weight: 600;
+        font-size: 0.7rem;
+        color: black;
+        background-color: #ffc2c2;
+    }
+
+    h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #Header{
+        font-weight: 800;
+        text-align: center;
+        font-size: 0.6rem;
+        grid-area: header;
+        margin: 2%;
+        padding-top: 2%;
+    }
+    
+    #Footer{
+        font-weight: 800;
+        bottom: 0;
+        text-align: center;
+        grid-area: footer;
+        padding: 2%;
+        margin: 2%;
+        font-size: 0.6rem;
+    }
+  }
+
+  
+  @media screen and (max-width: 400px) {
+    
+    #side{
+        grid-area: side;
+        background-color: #010a43;
+        color: #fff;
+        margin: 2%;
+        font-weight: 800;
+        font-size: 0.5rem;
+    }
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 0.1fr 2fr 0.1fr;
+        grid-template-areas: 
+        "side header"
+        "side days"
+        "side footer"
+        ;
+    }
+
+    #period{
+        border: 2px solid black;
+        line-height: 1.6;
+        text-align: center;
+        padding: 2%;
+        margin: 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-areas: 
+        "time"
+        "sub"
+        "link"
+        ;
+        font-weight: 600;
+        font-size: 0.5rem;
+        color: black;
+        background-color: #ffc2c2;
+    }
+
+    h2{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    #Header{
+        font-weight: 800;
+        text-align: center;
+        font-size: 0.5rem;
+        grid-area: header;
+        margin: 2%;
+        padding-top: 2%;
+    }
+    
+    #Footer{
+        font-weight: 800;
+        bottom: 0;
+        text-align: center;
+        grid-area: footer;
+        padding: 2%;
+        margin: 2%;
+        font-size: 0.5rem;
+    }
+  }
+
+  
+
+  #period a{
+      text-decoration: underline;
+  }
